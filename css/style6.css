@@ -1,0 +1,63 @@
+.sp{
+    width: 100%;
+    padding-top: 125px;
+}
+.sp1{
+    border: 1px solid black;
+    margin-top: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.486);
+}
+.sp2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+    padding-bottom: 35px;
+}
+.sp3{
+    width: 33.33%;
+    margin-right: 10px;
+    border:2px dashed rgb(236, 163, 4);
+}
+.sp3:first-child{
+    margin-left: 10px;
+}
+.sp3 img{
+    width: 100%;
+    
+}
+video {
+    width: 100%;
+}
+.kwed{
+    width: 100%;
+   background-color: rgba(12, 10, 10, 0.911);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mak{
+    margin-top: 30px;
+    border-bottom: 4px solid black;
+}
+marquee{
+    font-family: "Cursif";
+    font-size: 25px;
+    color: beige;
+    text-shadow: 0 0 5px red;
+}
+@media(max-width:800px){
+    .sp2{
+        flex-direction: column;
+    }   
+    .sp3{
+        margin: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .sp3:first-child{
+        margin:0;
+        margin-bottom: 20px;
+    }
+    .sp{
+        padding-top: 200px;
+    }
+}

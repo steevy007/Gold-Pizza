@@ -1,0 +1,85 @@
+.con{
+    background-color: rgba(255, 255, 255, 0.849);
+}
+.con form input{
+    width: 95%;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 20px;
+    font-family: "AppleGaramond";
+    background-color: rgba(0, 0, 0, 0.568);
+    margin-bottom: 10px;
+}
+.g{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.g a img{
+    
+    padding: 10px;
+    border-radius: 100%;
+}
+.g a img:hover{
+    background-color: rgb(255, 254, 254);
+    box-shadow: 0 0 5px;
+}
+.ko{
+    width: 98%;
+}
+.con form select {
+    width: 95%;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 1px 10px;
+    height: 30px;
+    background-color:  rgba(0, 0, 0, 0.568);
+}
+.con form select option{
+    background-color: rgba(243, 150, 10, 0.507);
+    box-shadow: 0 0 10px burlywood;
+    font-size: 20px;
+    text-align: center;
+}
+.con form div .q1{
+    float: left;
+    width: 15%;
+    background-color: rgba(243, 150, 10, 0.774);
+    box-shadow: 0 0 15px bisque;
+    color: rgba(27, 27, 26, 0.89);
+    padding: 2px 25px;
+    font-family: "AppleGaramond";
+    cursor: pointer;
+    text-align: center;
+}
+.con form div .q2{
+    float: right;
+    background-color: rgba(243, 150, 10, 0.774);
+    box-shadow: 0 0 15px bisque;
+    color: rgba(27, 27, 26, 0.89);
+    font-family: "AppleGaramond";
+    font-size: 20px;
+    padding: 2px 25px;
+    width: 15%;
+    text-align: center;
+    cursor: pointer;
+}
+.con form div .q1:hover{
+    background-color: whitesmoke;
+    box-shadow: 0 0 15px rgba(7, 7, 7, 0.726);
+    color: rgba(3, 3, 3, 0.883);
+}
+.con form div .q2:hover{
+    background-color: whitesmoke;
+    box-shadow: 0 0 15px rgba(7, 7, 7, 0.726);
+    color: rgba(3, 3, 3, 0.883);
+}
+center{
+    color:rgba(243, 150, 10, 0.774);
+}
+@media(max-width:800px){
+    .con{
+        width: 80%;
+    }
+}

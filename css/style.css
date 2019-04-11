@@ -1,0 +1,888 @@
+
+@font-face{
+    font-family: "AppleGaramond";
+    src: url('../font/AppleGaramond-Light.ttf');
+}
+
+@font-face{
+    font-family: "Cursif";
+    src: url('../font/Cursif.ttf');
+}
+
+
+body{
+    background-color: beige;
+    font-family: "AppleGaramond";
+    font-size: 14px;
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+h5{
+    margin: 0px;
+}
+
+.header-g{
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    
+}
+.infos{
+    background-color: beige;
+    padding: 5px 35px;
+    display: flex;
+    flex-direction: row;
+}
+.infos div{
+    width: 50%;
+}
+.infos div:first-child{
+    padding-top: 5px;
+}
+.infos div:first-child h4{
+    color: rgba(43, 44, 43, 0.753);
+}
+.infos div:last-child a{
+    color: brown;
+}
+.infos div:last-child{
+    text-align: right;
+    line-height: 2;
+    
+}
+.infos div:last-child a:hover{
+    text-decoration: underline;
+}
+.infos div:first-child h4{
+    line-height: 2;
+}
+.btn{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    
+    color: brown;
+}
+
+.ic-1{
+    margin-right: 5px;
+}
+.piz{
+    color: rgb(66, 31, 10);
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(236, 153, 29);
+    padding: 0 25px;
+    color: brown;
+}
+
+.logo{
+    line-height: 75px;
+    float: left;
+    text-transform: uppercase;
+    
+}
+.logo a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.menu{
+   
+    float: right;
+    line-height: 75px;
+}
+.menu a{
+    text-transform: capitalize;
+    color: brown;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.5s;
+    font-family: "Cursif";
+    font-size: 20px;
+}
+.b1{
+    margin: 0px;
+}
+.view-menu,.Hide-menu{
+    transition: 0.5s;
+    cursor: pointer;
+    display: none;
+}
+
+.menu a:hover,
+.view-menu:hover,
+.Hide-menu:hover{
+    color: rgba(43, 44, 43, 0.753);
+}
+
+.view-menu{
+    float: right;
+    line-height: 100px;
+}
+#chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+.slider{
+    width: 100%;
+    padding-top: 80px;
+    
+}
+.slider-view{
+    margin-top: 42px;
+    width: 100%;
+    height: 550px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: relative;
+  
+}
+.color-over{
+    width: 100%;
+    height: 100%;
+    background: rgb(33, 33, 28);
+    opacity: .3;
+    position: absolute;
+}
+.slider-view h2{
+    z-index: 2;
+    font-family: "Cursif";
+    font-size: 45px;
+    color: rgb(185, 80, 10);
+    line-height: 1.5;
+}
+.wrapper{
+   width: 90%;
+   margin: auto;
+   overflow: hidden;
+}
+.b2{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+h3{
+    color: rgb(63, 63, 218);
+}
+.s-b2{
+    width: 33.33%;
+    box-shadow:0 0  25px rgb(236, 153, 29); 
+    margin: 20px;
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(124, 117, 117);
+}
+.s-b2 div h2{
+    line-height: 4;
+    font-family: "Cursif";
+}
+.s-b2 ul{
+    list-style-type: none;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.s-b2 ul li{
+    font-family: "AppleGaramond";
+    font-size: 20px;
+}
+.b3{
+    text-align: center;
+    justify-content: center;
+    margin: 50px 0px;
+    color: rgb(124, 117, 117);
+    
+}
+.b3 h4{
+    line-height: 2;
+    font-size: 25px;
+    color: rgb(236, 153, 29); 
+    font-family: "AppleGaramond";
+}
+.b3 h3{
+    line-height:2;
+    font-size: 45px;
+    font-family: "AppleGaramond";
+    color:rgb(66, 31, 10);
+}
+.b3 p{
+    font-size: 25px;
+    font-family: "AppleGaramond";
+}
+.b4{
+    width: 100%;
+    height: 450px;
+    background-image: url('../images/img27.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+}
+.s1-b4{
+   z-index: 1;
+   margin: auto;
+   color: rgb(185, 80, 10);
+   text-align: center;
+   padding: 10px 20px;
+   background-color: rgba(243, 243, 243, 0.603);
+   border-bottom-right-radius: 100px;
+   border-top-left-radius: 50px;
+   box-shadow: 0 0 30PX;
+}
+.s1-b4 h1,h4{
+    font-family: "Cursif";
+}
+.s1-b4 h1{
+    font-size: 35px;
+}
+.s1-b4 h4{
+    font-size: 20px;
+}
+.s1-b4 a{
+    line-height: 4;
+    text-decoration: none;
+    padding: 10px 15px;
+    border:2px solid rgb(185, 80, 10);
+    color: rgb(185, 80, 10);
+    font-size: 16px;
+    transition: 0.8s;
+    
+}
+.b5{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.b6{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+.s1-b6 img{
+    width: 100%;
+}
+.s1-b4 a:hover{
+    color: rgb(124, 117, 117);
+    border: none;
+    background-color: rgb(236, 153, 29);
+    transition: 0.6S;
+}
+.s1-b5{
+    width: 100%;
+    padding: 0 50px;
+}
+.s1-b5 h1{
+    color:rgb(124, 117, 117);
+    font-family: "Cursif";
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.s1-b5  p{
+    font-size: 20px;
+    font-family: "AppleGaramond";
+    margin-bottom: 10px;
+    color: rgb(75, 75, 75);
+}
+.s1-b5 img{
+    width: 100%;
+    margin-top: 20px;
+    opacity: 0.7;
+    
+}
+.i-so{
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.i-so a{
+   
+    margin: 5px;
+  
+}
+
+.s1-b7{
+    padding-top: 20px ;
+    padding-left:10px;
+    padding-right: 10px; 
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 0 0 15px;
+}
+.s1-b7 h2{
+    color: rgb(124, 117, 117);
+    font-family: "Cursif";
+    font-size: 20px;
+}
+.s1-b7 p{
+    color:rgb(75, 75, 75);
+    font-family:"AppleGaramond";
+    font-size: 18px;
+}
+.b8{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+}
+.sec{
+    background-color: rgba(204, 204, 204, 0.658);
+}
+.s1-b8{
+    width: 33.33%;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5px;
+}
+.b8-ic{
+    width: 30%;
+   padding-left: 10px;
+   padding-bottom: 10px;
+    margin: auto;
+ 
+}
+.b8-1{
+    width: 70%;
+    padding: 10px 0px;
+}
+.b8-1 h1{
+    font-family: "Cursif";
+    color: rgb(124, 117, 117);
+}
+.b8-1 h1 span{
+    color: rgb(185, 80, 10);
+}
+.b8-1 p{
+    font-family: "AppleGaramond";
+    color: rgb(75, 75, 75);
+    font-size: 18px;
+}
+.s-b3{
+    width: 25%;
+    
+    padding: 20px;
+}
+.s-b3 img{
+    width: 100%;
+}
+.s-b3 div:last-child{
+    text-align: center;
+    margin-top: 15px;
+}
+.s-b3 div:last-child h2{
+    font-family: "Cursif";
+    font-size: 20px;
+    color: rgb(124, 117, 117);
+}
+.s-b3 div:last-child h5{
+    font-family: "AppleGaramond";
+    font-size: 18px;
+    color: rgb(185, 80, 10);
+}
+.b3-4{
+    margin-top: 20px;
+}
+.b3-4 h4{
+    color: rgb(185, 80, 10);
+    font-family: "Cursif";
+    text-align: center;
+    font-size: 35px;
+}
+.pied{
+    background-color: rgb(160, 160, 160);
+    color:rgb(99, 95, 95);
+}
+.p-1{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px;
+}
+.p1-b1{
+    width: 25%;
+   
+    margin: 10px;
+    padding: 10px 25px;
+}
+.p1-b2{
+    width: 50%;
+    
+    margin: 15px;
+    padding: 10px 25px;
+    
+}
+.p1-b2 h5{
+    margin-top: 20px;
+}
+.p1-b2 .mail{
+  
+  display: flex;
+    flex-direction: row;
+    
+}
+.p1-b1 .lis{
+    float: left;
+}
+.p1-b1 .lis1{
+    float: right;
+}
+.p1-b1 h2{
+    font-family: "Cursif";
+    color: rgb(99, 95, 95);
+    
+}
+.p1-b1 ul{
+    list-style-type: none;
+    margin-top: 10px;
+}
+.p1-b1 ul li{
+    margin-bottom: 10px;
+    font-family: "AppleGaramond";
+    font-size: 14px;
+    color:  rgb(97, 40, 2);
+}
+.p1-b1 ul li:hover{
+    
+    cursor: pointer;
+    text-shadow: 0 0 10px;
+}
+.p1-b2 .mail div:first-child{
+    width: 70%;
+}
+.p1-b2 h5{
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: "AppleGaramond";
+    color:  rgb(97, 40, 2);
+}
+.p1-b2 .mail div:first-child input{
+    width: 100%;
+    color: white;
+    background-color:rgba(235, 229, 229, 0.719);
+    font-family: "Cursif";
+    border: none;
+    padding: 9.5px 10px;
+    font-size: 15px;
+}
+.p1-b2 .mail div:first-child input:hover{
+    transition: 1s;
+    background-color: beige;
+    box-shadow: 0 0 20px;
+    color: rgb(185, 80, 10);
+    
+}
+.p1-b2 .mail div:last-child{
+    width: 30%;
+    text-align: center;
+}
+.p1-b2 .mail div:last-child a{
+    text-decoration: none;
+    background-color: rgb(185, 80, 10);
+    /*padding: 20px 55px;*/
+    display: block;
+    padding: 3.73px 0px;
+    font-size: 20px;
+    font-family: "Cursif";
+    color:whitesmoke;
+}
+.p1-b2 .mail div:last-child a:hover{
+    transition: 0.7s;
+    background-color: beige;
+    box-shadow: 0 0 20px;
+    color: rgb(185, 80, 10);
+}
+.p-2{
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+}
+.p2-b1{
+    width: 50%;
+    
+   margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.p2-b1 h4{
+    
+    font-size: 18px;
+    line-height: 2.3;
+    color: rgb(49, 49, 49);
+    text-shadow: 0 0 5px;
+}
+.a{
+    font-family: "Cursif";
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    text-shadow: 0 0 5px;
+}
+.ii{
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+}
+hr{
+    color: gray;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    height: 3px;
+}
+
+.g{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.g div{
+    width: 25%;
+    height: 65px;
+    border-radius: 100%;
+    margin-right: 10px;
+    box-shadow: 0 0 25px;
+    background-color: rgb(173, 173, 170);
+}
+.ik1{
+    position: relative;
+    top: 17px;
+    display: block;
+}
+.g div:hover{
+    transition: 0.8s;
+    background-color: beige;
+    box-shadow: 0 0 25px rgb(185, 80, 10);
+}
+.p03{
+    background-color: rgba(26, 24, 24, 0.705);
+}
+.p-3 h3{
+    position: relative;
+    top: -10px;
+    font-family: "Cursif";
+    color:  rgb(0, 0, 0);
+    text-shadow: 0 0 5px  beige;
+}
+.p-3 .l1{
+    float: left;
+}
+.p-3 .l2{
+    float: right;
+}
+.arr{
+    
+    float: right;
+    clear: both;
+    background-color: rgb(197, 197, 197);
+    padding: 10px 15px;
+    
+}
+.arr:hover{
+    box-shadow:inset  0 0 10px;
+    color:rgb(22, 19, 19);
+}
+.p-3{
+    padding-top: 20px;
+    
+}
+.modal{
+  
+  display: none;
+    position: fixed;
+    z-index: 500000;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+      
+}
+
+.modc{
+    /*background-image: url('../images/img43.jpg');
+    background-size: cover;*/
+    background-image: linear-gradient(rgba(241, 171, 80, 0.863),rgba(105, 105, 110, 0.74));
+    margin: 12% auto;
+    padding:20px 20px ;
+    width: 35%;
+    /*box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 20px;
+    animation-name: ouvri;
+    animation-duration: 1s;
+}
+@keyframes ouvri{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+.modc p{
+    margin-top: 20px;
+}
+.close{
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+}
+.close:hover,.close:focus{
+    color: rgb(185, 80, 10);
+    text-decoration: none;
+    cursor: pointer;
+}
+.content form{
+    margin-top: 30px;
+}
+.content form div{
+    
+    padding:0px 25px;
+    
+    margin-bottom: 10px;
+    background-color: rgba(2, 2, 2, 0.719);
+ 
+    
+}
+.content form div img{
+    position: absolute;
+    left: 5px;
+    top:5px;
+}
+.content form div input{
+    width: 100%;
+    border: none;
+    font-size: 25px;
+    cursor:normal;
+    font-family: "AppleGaramond";
+    color: beige;
+}
+.content form div:last-child{
+    text-align: center;
+    padding: 10px 0px;
+    background-color: transparent;
+}
+
+#bl{
+    background-color: rgba(245, 245, 245, 0.65);
+    box-shadow: 0 0 2000px red;
+    padding: 15px 50px;
+    margin-bottom:0px;
+}
+#b1:hover{
+    background-color: brown;
+    border:1px solid beige;
+    color: rgba(0, 0, 0, 0.705);
+}
+.content form div:last-child a{
+    color: black;
+    font-size: 19px;
+    line-height: 3;
+    text-decoration: none;
+    color: rgb(112, 10, 10);
+    font-family: "Cursif";
+}
+.content form div:last-child a:hover{
+   color: rgba(0, 0, 0, 0.705);
+   text-decoration: underline;
+   text-shadow: 0 0 2px;
+}
+
+center{
+    font-family: "Cursif";
+    font-size: 30px;
+    color: brown;
+}
+@media(max-width:800px){
+    .view-menu,.Hide-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;;
+        background: beige;
+        right:-100%;
+        top: 0;
+        text-align: center;
+        padding: 60px 0px;
+        line-height: normal;
+        transition: 0.7s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+        color: rgb(236, 153, 29);
+        font-size: 14px;
+    }
+    .menu a:hover{
+        background-color:burlywood;
+    }
+    .Hide-menu{
+        position: absolute;
+        top: 20px;
+        right: 10px;
+    }
+    #chk:checked ~.menu{
+        right: 0;
+    }
+    .infos{
+        flex-direction: column;
+    }
+    .infos div{
+        width: 100%;
+        
+    }
+    .infos div:first-child h4{
+        font-size: 12px;
+    }
+    .infos div:last-child{
+        text-align: center;
+    }
+    .slider-view{
+        margin-top: 74px;
+    }
+    .slider-view h2{
+        text-align: left;
+        font-size: 20px;
+    }
+    .b2{
+        flex-direction: column;
+    }
+    .s-b2{
+        width: 100%;
+        margin: 20px 0px;
+        box-shadow: none;
+        box-shadow:inset 0 0 10px rgb(236, 153, 29);
+    }
+    .s-b2 div h2{
+        font-size: 20px;
+    }
+    .b3 h4{
+        font-size: 25px;
+    }
+    .b3 h3{
+        font-size: 28px;
+       
+    }
+    .b3 p{
+        font-size: 20px;
+    }
+    .s1-b4 h1{
+        font-size: 20px;
+    }
+    .s1-b4 h4{
+        font-size: 15px;
+    }
+   .b5{
+       width: 100%;
+   }
+   .s1-b5{
+       padding: 0px 10px;
+   }
+   .s1-b5 h1{
+       font-size: 22px;
+   }
+   .s1-b5 p{
+       font-size: 18px;
+   }
+   .b6{
+       width: 100%;
+   }
+   .s1-b5 img{
+       margin-bottom: 20px;
+       box-shadow: 0 0 20px;
+       
+   }
+   .s1-b7 h2{
+       font-size: 18px;
+   }
+   .s1-b7 p{
+       font-size: 16px;
+   }
+   .b8{
+    flex-direction: column;
+   }
+   .s1-b8{
+       width: 100%;
+      
+   }
+   .b8-ic{
+       padding:0px;
+   }
+   .b8-1{
+       padding-left: 10px;
+   }
+   .b8-1 h1{
+    font-size: 22px;
+   }
+   .b8-1 p{
+       font-size: 16px;
+   }
+   .s-b3{
+       width: 100%;
+       padding: 0px;
+       margin-bottom: 25px;
+   }
+   .p-1{
+    flex-direction: column;
+   }
+   .p1-b1{
+       width: 100%;
+       margin: 0;
+       padding: 0;
+       margin-bottom: 15px;
+   }
+   .p1-b2{
+       width: 100%;
+       margin: 0;
+       padding: 0;
+   }
+   .p-2{
+       flex-direction: column;
+   }
+   .p2-b1{
+       width: 100%;
+       margin: 0px;
+       
+   }
+   .g{
+       width: 100%;
+       margin-left: 5px;
+       padding: 0;
+       
+   }
+   .g div{
+       padding: 0px;
+       box-shadow: none;
+       border-radius: 0%;
+   }
+   .arr{
+       margin-top: 15px;
+   }
+   .p-3 .l1{
+       float: none;
+       font-size: 14px;
+   }
+   .p-3 .l2{
+    float: none;
+    font-size: 14px;
+}
+.modc{
+    width: 95%;
+    margin: 62% auto;
+}
+}

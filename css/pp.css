@@ -1,0 +1,20 @@
+.con{
+    display: block;
+    width: 50%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.691);
+    padding: 20px;
+    height: 280px;
+    box-shadow: 0 0 25px rgb(3, 3, 3);
+}
+center{
+    font-family: "Cursif";
+    color: rgb(230, 150, 22);
+    font-size: 30px;
+}
+h3{
+    text-align: center;
+    color:  rgb(230, 150, 22);;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.507);
+    font-size: 30px;
+}
